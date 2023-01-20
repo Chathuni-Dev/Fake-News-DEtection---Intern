@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: blitzapp
+    name: FND
     env: node
     plan: free
     buildCommand: yarn --frozen-lockfile --prod=false && blitz build
@@ -8,5 +8,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: SESSION_SECRET_KEY
+      - key: devindi
         generateValue: true
